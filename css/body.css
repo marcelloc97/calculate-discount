@@ -1,0 +1,43 @@
+.discount-conteiner {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.discount-conteiner div.block[disabled] {
+  display: none;
+}
+
+.discount-conteiner div.block {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.discount-conteiner div.block h3 {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-size: 2rem;
+
+  background: var(--color-primary-dark);
+  color: var(--color-title-in-primary);
+}
+
+.discount-conteiner div.block div {
+  display: flex;
+  flex-direction: column;
+}
+
+.discount-conteiner div.block div input {
+  padding: 6px;
+  border-radius: 30px;
+}

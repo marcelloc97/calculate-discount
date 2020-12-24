@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assets/Logo@1x.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/global-style.css" />
+  <title>Discount? NOW!</title>
+</head>
+<body>
+  <header>
+    <img src="assets/Logo@3x.png" alt="app logo" />
+    <nav>
+      <ul>
+        <li>
+          Cálculos
+          <ul>
+            <li onclick="switchMode('price')">
+              Desconto por Preço
+            </li>
+            <li onclick="switchMode('quantity')">
+              Desconto por Quantidade
+            </li>
+          </ul>
+        </li>
+        <li>
+          Alguma coisa
+        </li>
+        <li>
+          Alguma coisa
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="discount-conteiner">
+      <div class="block">
+        <h3>Calcular desconto com base de preço</h3>
+        <div>
+          <label>Preço 1</label>
+          <input type="number" name="p1" title="Preço 1" />
+          <label>Preço 2</label>
+          <input type="number" name="p2" title="Preço 2" />
+        </div>
+        <button type="submit" onclick="calculate('price')">
+          Calcular
+        </button>
+      </div>
+
+      <div class="block" disabled>
+        <h3>Calcular desconto com base de quantidade</h3>
+        <input type="number" name="p1" />
+        <input type="number" name="q1" />
+        <input type="number" name="p2" />
+        <input type="number" name="q2" />
+        <button type="submit" onclick="calculate('quantity')">
+          Calcular
+        </button>
+      </div>
+    </section>
+    <ul id="result-log"></ul>
+  </main>
+  <footer>
+    Desenvolvido por <a href="https://github.com/marcelloc97">Marcello Carvalhal</a>
+  </footer>
+  <script src="js/calculate.js"></script>
+</body>
+</html>
